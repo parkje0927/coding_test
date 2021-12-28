@@ -96,4 +96,16 @@ print(count_by_range(a, 4, 4))
 print(count_by_range(a, -1, 3))
 
 # collections
+from collections import deque, Counter
+
+data = deque([2, 3, 4])
+data.appendleft(1)
+data.append(5)
+
+print(data)
+print(list(data))
+
+counter = Counter(['red', 'red', 'blue'])
+print(counter['blue'])
+print(counter['red'])
 
